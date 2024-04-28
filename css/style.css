@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/*divs gerais*/
+.container {
+  width: 100%;
+  max-width: 1750px;
+  margin: 0 auto;
+  padding: 20px 2%;
+
+}
+
+.clear {
+  clear: both;
+}
+
+/**/
+header {
+  background-color: rgb(190, 190, 190);
+
+}
+
+.logo-1 {
+  background-image: url("../image/logo1.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  /*valor padrão*/
+  background-position: center;
+  height: 60px;
+  width: 160px;
+  float: left;
+
+}
+
+.logo-2 {
+  background-image: url("../image/logo2.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  /*valor padrão*/
+  background-position: center;
+  height: 60px;
+  width: 160px;
+  float: right;
+
+}
+
+@media screen and (max-width: 560px) {
+
+  .bg {
+    display: inline-block;
+  }
+
+  .form-container {
+    position: sticky !important;
+    display: inline-block;
+    width: 90%;
+    height: auto !important;
+    max-width: 470px;
+  }
+
+  .enviar {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  header {
+    text-align: center;
+  }
+
+  .logo-1,
+  .logo-2 {
+    float: none;
+    display: inline-block;
+  }
+}
+
+section.cover-form {
+  width: 100%;
+
+}
+
+.bg {
+  background-image: url('../image/central1.png');
+  background-repeat: no-repeat;
+  background-size: 1750px;
+  background-position: center;
+  height: 700px;
+  position: relative;
+  text-align: left;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  width: 400px;
+  height: 105%;
+  top: -2.5%;
+  right: 130px;
+  margin-left: 40px;
+  box-shadow: 4px 4px 1px 1px rgba(221, 221, 221, 0.9);
+}
+
+.form-container h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+  padding: 30px 15px;
+  background-color: rgb(219, 219, 219);
+  line-height: 25px;
+}
+
+.form-container form input[type="text"] {
+  width: calc(100% - 10%);
+  height: 52px;
+  line-height: 50px;
+  margin-top: 20px;
+  padding-left: 5px;
+
+}
+
+.form-container form input[type="submit"] {
+  width: 150px;
+  height: 65px;
+  line-height: 65px;
+  background-color: rgb(219, 219, 219);
+  font-size: 17px;
+  cursor: pointer;
+  position: sticky;
+
+}
+
+.enviar {
+  margin-top: 30px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.enviar p {
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 30px;
+  font-size: medium !important;
+}
+
+.form-container form {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.form-container p {
+  margin-top: 40px;
+  font-size: 18px;
+
+}
+
+section.chamada {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+section.chamada div.container {
+  background-color: rgb(226, 226, 226);
+  padding: 40px 0 40px 0;
+}
+
+section.chamada h2 {
+  max-width: 700px;
+  width: 96%;
+  display: inline-block;
+  font-size: 44px;
+  font-weight: normal !important;
+  text-transform: uppercas;
+}
+
+section.chamada p {
+  font-size: 26px;
+  display: inline-block;
+}
+
+.flex-mosaico {
+  display: flex;
+}
+
+.item-1-mosaico {
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+}
+
+.item-2-mosaico {
+  padding: 120px;
+  width: 40%;
+  font-size: 27px;
+  text-align: center;
+  font: normal !important;
+  background-color: rgb(220, 236, 243);
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .flex-mosaico {
+    display: block;
+  }
+
+  .item-1-mosaico {
+    width: 100%;
+    padding-top: 70%;
+  }
+
+  .item-2-mosaico {
+    text-align: justify;
+    width: 100%;
+  }
+}
+
+.fim {
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
